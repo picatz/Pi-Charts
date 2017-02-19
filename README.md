@@ -4,6 +4,12 @@ Pi Charts is a ruby gem to easily generate beautiful charts using [chartjs](http
 
 ⚠️ This gem is install in development. Things may change to be better in the future. 
 
+## Installation
+
+```
+$ gem install pi_charts
+```
+
 ## Usage
 
 Pi Charts is a really good pair with something like [sinatra](http://www.sinatrarb.com/), for example:
