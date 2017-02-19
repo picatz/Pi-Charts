@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["kgruber1@emich.edu"]
 
   spec.summary       = %q{A ruby gem to easily build beautiful charts using chartjs.}
-  spec.description   = %q{A ruby gem to easily build beautiful charts using chartjs. If you like charts, and ruby, and want beautiful javascript charts.}
+  spec.description   = %q{A ruby gem to easily build beautiful charts using chartjs. If you like charts, ruby, and want beautiful javascript charts.}
   spec.homepage      = "https://github.com/picatz/Pi-Charts"
   spec.license       = "MIT"
 
