@@ -6,17 +6,17 @@ module PiCharts
       @config.data[:data][:labels] = labels
     end
 
-    def title(args={})
+    def title(args = {})
       if args.keys.empty? or ! args.keys.include? [:title]
         raise "need to specify title with {title: 'name', display: true/false }" 
       end
       @config.data[:data][:options][:title] = {}
-      @config.data[:data][:options][:title][:text] = args[:title] || ""
+      @config.data[:data][:options][:title][:text]    = args[:title] || ""
       @config.data[:data][:options][:title][:display] = true unless args[:display] == false
       true
     end
 
-    def create(args={})
+    def create(args = {})
       @config.data[:type] = 'line'
       @config.data[:data][:datasets] = []
       @config.data[:data][:labels]   = []
@@ -24,7 +24,7 @@ module PiCharts
       true
     end
 
-    def add_dataset(args={})
+    def add_dataset(args = {})
       if args.keys.empty?
         raise "need to specify dataset with { label: 'name', data: [1,2,3] }"
       end
@@ -152,7 +152,7 @@ module PiCharts
       end
     end
 
-    def stepped(dataset=false)
+    def stepped(dataset = false)
       unless dataset
         false
       else
@@ -171,7 +171,7 @@ module PiCharts
 
     private
 
-    def dataset_index(label=false)
+    def dataset_index(label = false)
       if label
         @config.data[:data][:datasets].each_with_index do |set, index|
           if set[:label] == label
