@@ -1,6 +1,13 @@
 module PiCharts
+  
+  # The Config class provides the interface to the config
+  # for a chart. This is basically the skeleton of the 
+  # infromation that drives the infromation for the chart
+  # that can be rendered into json. This information is 
+  # constructed with its +data+ which actually provides
+  # the blueprints.
   class Config
-    attr_accessor :data
+    attr_accessor :data # The main brain and butter of what makes the co
 
     # The initialize() method handles the creation of what defines
     # the +data+ for a +config+, which sets up the relevant base.
